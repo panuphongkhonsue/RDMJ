@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #F5F5F5;
+    font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+.box_check {
+    background-color: null !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 650px !important;
+    height: 180px !important;
+    /* margin-left: 18% !important;
+    border-radius: 36px !important; */
+}
+
+.col {
+    padding-left: '200%';
+    margin-top: '10px';
+}
+
+
+.text_name_maintenance {
+    width: 150px;
+    height: 110px;
+    padding-top: 15px;
+}
+
+.check_in {
+    width: 90px !important;
+    height: 30px !important;
+    font-size: 11px !important;
+}
+
+.confirm_button {
+    width: 65px !important;
+    height: 25px !important;
+    font-size: 11px !important;
+    margin-top: 70px !important;
+    margin-right: 40px !important;
+
+}
+
+/* .confirm_button.submitted  {
+    width: 65px !important;
+    height: 25px !important;
+    font-size: 11px !important;
+    margin-top: 70px;
+    margin-right: 40px !important;
+    
+} */
+
+.confirm_button.shouldChangeCheckInColor {
+    background: #d01818 !important;
+    color: #8c8c8c !important;
+}
+
+/* .check_in_confirmed {
+    background: #ede6e6 !important;
+    color: #8c8c8c !important;
+} */
+
+.check_in.success {
+    box-shadow: #8c8c8c !important;
+    background: #e5e5e5 !important;
+    color: #8c8c8c !important;
+}
+
+.cancel_button {
+    width: 65px !important;
+    height: 25px !important;
+    font-size: 11px !important;
+    margin-left: 50px !important;
+    margin-right: 20px !important;
+    margin-top: 70px !important;
+    border: 0.79px solid #8C8C8C !important;
+    background: #FFF !important;
+    color: #8C8C8C !important;
+}

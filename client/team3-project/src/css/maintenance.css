@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #F5F5F5;
+  font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+.text_header {
+  color: #133e4e;
+  font-size: 32px;
+  font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+select {
+  border-radius: 3.661px;
+  border: 0.523px solid #c4c4c4;
+  background: #fff;
+}
+
+.position_select {
+  display: inline;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .last-col {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .last-col {
+    margin-top: 10px;
+  }
+
+  .second-col {
+    margin-top: 10px;
+  }
+}
+
+.Note {
+  color: gray;
+}
+
+.image-note {
+  z-index: 0;
+  cursor: pointer;
+}
+
+.text-popup {
+  display: flex;
+  align-items: center;
+}
+
+.circle-note {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+}
+
+.popup-triangle {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  bottom: 5px;
+  left: 100%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #424242;
+}

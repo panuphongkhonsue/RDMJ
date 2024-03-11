@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #F5F5F5;
+    font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+.custom-tabs {
+    & .MuiTab-root {
+        color: #016064 !important;
+    }
+
+    & .MuiTabs-indicator {
+        display: none !important;
+    }
+
+    & .Mui-selected {
+        background-color: #016064 !important;
+        color: white !important;
+    }
+}
+
+.bor {
+    border: 1px solid red;
+}
+
+.tap {
+    font-size: 12px !important;
+}
+
+.text-texch {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+}
+
+.card {
+    background-color: #E1E9E9;
+    width: 200px;
+}
+
+.card-body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 20px !important;
+    font-size: 14px !important;
+}
+
+.card-all {
+    overflow: auto !important;
+    height: 420px !important;
+}
