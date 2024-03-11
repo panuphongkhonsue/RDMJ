@@ -1,0 +1,57 @@
+version: '3'
+services:
+  client:
+    container_name: RDMJ_client
+    build:
+      context: ./client/team3-project
+    ports:
+      - "8003:3000"
+    networks:
+      - my_network
+    restart: always
+
+  db:
+    image: mysql:latest
+    restart: always
+    container_name: RDMJ_database
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rdmj_database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    volumes:
+      # - ./RDMJ_Schema.sql:/docker-entrypoint-initdb.d/RDMJ_Schema.sql
+      - mysql_data:/var/lib/mysql
+    expose:
+      - "3306"
+    ports:
+      - "8005:3306"
+    networks:
+      - my_network
+
+  nodejs:
+    container_name: RDMJ_server
+    depends_on:
+      - db
+      - client
+    image: node:18-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - ./server:/usr/src/app
+    command: sh -c "npm install -g nodemon && npm install && nodemon ./src/server.ts"
+    ports:
+      - "8004:3000"
+    expose:
+      - "3000"
+    networks:
+      - my_network
+    restart: always
+
+networks:
+  my_network:
+    external: true
+
+volumes:
+  mysql_data: 
+

@@ -1,0 +1,33 @@
+stages:
+  - build
+  - deploy
+
+services:
+    - docker:dind
+
+client:
+  stage: build
+  tags : 
+    - docker
+  script:
+    - cd client 
+    - cd team3-project
+    - docker build -t my-nextjs-app .
+
+server:
+  stage: build
+  tags : 
+    - docker
+  script:
+    - cd server  # Navigate to the backend directory
+    - docker build -t my-nodejs-app .
+
+
+deploy:
+  stage: deploy
+  tags : 
+    - docker
+  only:
+    - setup_deploy
+  script:
+    - docker-compose up -d 
