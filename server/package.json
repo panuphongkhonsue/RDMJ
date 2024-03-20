@@ -1,0 +1,48 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Realtime Dashboard Daily Maintenance Job Team 3 X Siam Denso Server",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit 1",
+    "dev": "npx ts-node-dev ./src/server.ts",
+    "app": "nodemon  ./src/server.ts"
+  },
+  "author": "Team 3",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.2",
+    "@types/node-cron": "^3.0.11",
+    "bcrypt": "^5.1.1",
+    "chart.js": "^3.7.0",
+    "concurrently": "^8.2.1",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1",
+    "react-chartjs-2": "^3.0.5",
+    "sequelize": "^6.33.0",
+    "sequelize-typescript": "^2.1.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5"
+  }
+}
